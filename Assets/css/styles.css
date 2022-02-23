@@ -40,7 +40,14 @@ form {
 	display: grid;
 	gap: 2rem;
 	/* 	grid-auto-rows: 2rem; */
-    --webkit-appearance: none;
+
+
+
+    /* UNSURE */
+    --webkit-appearance: none; /* Unsure areas */
+    /* UNSURE */
+
+    
 }
 
 .field {
