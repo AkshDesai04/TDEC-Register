@@ -1,1 +1,31 @@
-/* css file */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@900&display=swap');
+
+body {
+    background-color: #03045E;
+}
+
+h1 {
+    font-family: 'Source Code Pro', 'sans-serif';
+    font-style: normal;
+    font-size: 50px;
+    color: #F03A47;
+}
+
+label {
+    font-family: 'Source Code Pro', 'sans-serif';
+    font-style: normal;
+    font-size: 30px;
+    color: #F6F4F3;
+}
+
+input {
+    border-radius: 90px;
+    width: 400 ise;
+    height: 60 ise;
+    background: transparent;
+    border-color: #F6F4F3;
+
+    font-family: 'Source Code Pro', 'sans-serif';
+    font-size: 20px;
+    color: #F6F4F3;
+}
