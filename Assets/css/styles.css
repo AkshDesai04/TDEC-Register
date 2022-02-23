@@ -10,8 +10,9 @@ body {
 	height: 100vh;
 	display: grid;
 	place-items: center;
-	font-family: "Source Code Pro", "Poppins", sans-serif;
+	font-family: "Poppins", sans-serif;
 	background-color: #232931;
+	color: #eeeeee;
 }
 
 .container {
@@ -25,14 +26,14 @@ body {
 	flex-direction: column;
 	gap: 3rem;
 
-	box-shadow: -13px -13px 12px #393E46, 13px 13px 12px #036363;
+	box-shadow: -10px -10px 10px #2a353c, 10px 10px 10px #1c1e27;
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 2.94rem;
 	font-weight: 500;
+	color: #4ecca3;
 	align-self: center;
-    color: #4ECCA3;
 }
 
 form {
@@ -46,21 +47,16 @@ form {
 	gap: 1rem;
 }
 
-label {
-    color: #EEEEEE;
-}
-
 input {
 	background: transparent;
 	border-radius: 1.5rem;
 	border: none;
-	padding: 1rem;
+	padding: 1rem 1.25rem;
 	font-family: inherit;
 	outline: none;
-    color: #036363;
+	color: #4ecca3;
 
-
-	box-shadow: inset -5px -5px 12px #393E46, inset 5px 5px 12px #036363;
+	box-shadow: inset -5px -5px 12px #2a353c, inset 5px 5px 12px #1c1e27;
 }
 
 button {
@@ -68,27 +64,19 @@ button {
 	border: none;
 	font-size: 1.25rem;
 	padding: 0.7rem;
-	font-family: "Source Code Pro";/*, inherit;*/
+	color: inherit;
+	font-family: inherit;
 	border-radius: 1.5rem;
-    color: #036363;
-	box-shadow: -5px -5px 15px #393E46, 5px 5px 15px #036363;
+	box-shadow: -5px -5px 15px #2a353c, 5px 5px 15px #1c1e27;
 	transition: box-shadow 300ms ease;
 	cursor: pointer;
+	outline: noone;
 }
 
 button:hover {
-	box-shadow: -10px -10px 12px #393E46, 10px 10px 12px #036363;
+	box-shadow: -10px -10px 12px #2a353c, 10px 10px 12px #1c1e27;
 }
 
-::placeholder {
-    color: #EEEEEE;
-    opacity: 0.5;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #EEEEEE;
-}
-  
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: #EEEEEE;
+button:focus-within {
+	box-shadow: inset -10px -10px 12px #2a353c, inset 10px 10px 12px #1c1e27;
 }
