@@ -11,28 +11,28 @@ body {
 	display: grid;
 	place-items: center;
 	font-family: "Source Code Pro", "Poppins", sans-serif;
-	background-color: #041C32;
+	background-color: #232931;
 }
 
 .container {
 	height: 600px;
 	width: 450px;
 	padding: 2.5rem;
-	background-color: #041C32;
+	background-color: #232931;
 	border-radius: 1.5rem;
 
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
 
-	box-shadow: -13px -13px 12px #064663, 13px 13px 12px #04293A;
+	box-shadow: -13px -13px 12px #393E46, 13px 13px 12px #036363;
 }
 
 h1 {
 	font-size: 3rem;
 	font-weight: 500;
 	align-self: center;
-    color: #ECB365;
+    color: #4ECCA3;
 }
 
 form {
@@ -47,7 +47,7 @@ form {
 }
 
 label {
-    color:#ECB365;
+    color: #EEEEEE;
 }
 
 input {
@@ -57,10 +57,10 @@ input {
 	padding: 1rem;
 	font-family: inherit;
 	outline: none;
-    color: #ECB365;
+    color: #036363;
 
 
-	box-shadow: inset -5px -5px 12px #064663, inset 5px 5px 12px #04293A;
+	box-shadow: inset -5px -5px 12px #393E46, inset 5px 5px 12px #036363;
 }
 
 button {
@@ -68,27 +68,27 @@ button {
 	border: none;
 	font-size: 1.25rem;
 	padding: 0.7rem;
-	font-family: "Source Code Pro", inherit;
+	font-family: "Source Code Pro";/*, inherit;*/
 	border-radius: 1.5rem;
-    color: #ECB365;
-	box-shadow: -5px -5px 15px #064663, 5px 5px 15px #04293A;
+    color: #036363;
+	box-shadow: -5px -5px 15px #393E46, 5px 5px 15px #036363;
 	transition: box-shadow 300ms ease;
 	cursor: pointer;
 }
 
 button:hover {
-	box-shadow: -10px -10px 12px #064663, 10px 10px 12px #04293A;
+	box-shadow: -10px -10px 12px #393E46, 10px 10px 12px #036363;
 }
 
 ::placeholder {
-    color: #ECB365;
-    opacity: 0.75;
+    color: #EEEEEE;
+    opacity: 0.5;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: red;
+    color: #EEEEEE;
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: red;
+    color: #EEEEEE;
 }
