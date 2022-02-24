@@ -28,8 +28,8 @@ body {
 
 	box-shadow: -10px -10px 10px #2a353c, 10px 10px 10px #1c1e27;
 
-    /* overflow-x: hidden;
-    overflow-y: auto; */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 h1 {
@@ -104,7 +104,6 @@ button:focus-within {
 	box-shadow: inset -10px -10px 12px #2a353c, inset 10px 10px 12px #1c1e27;
 }
 
-/* 
 ::-webkit-scrollbar {
     width: 0.5rem;
   }
@@ -117,4 +116,4 @@ button:focus-within {
   ::-webkit-scrollbar-thumb {
     background: #4ecca3;
     border-radius: 10px;
-  } */
+  }
