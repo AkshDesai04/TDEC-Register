@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Registration</title>
+		<link rel="stylesheet" href="./Assets/css/styles.css">
+		<script src="./Assets/js/main.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+
+			<h1>Registration</h1>
+
+			<form action="">
+
+				<div class="field">
+					<label>Name</label>
+					<input type="text" placeholder="Enter Name">
+				</div>
+
+				<div class="field">
+					<label>Department</label>
+					<select name="department" id="department_select">
+						<option value="" disabled selected hidden>Select department</option>
+						<option value="Information Technology">Information Technology</option>
+						<option value="Mechanical">Mechanical</option>
+						<option value="Electrical">Electrical</option>
+						<option value="Civil">Civil</option>
+						<option value="Computer">Computer</option>
+						<option value="Automobile">Automobile</option>
+						<option value="Chemical">Chemical</option>
+						<option value="HNSS">HNSS</option>
+					</select>
+				</div>
+
+				
+				<div class="field">
+					<label>Designation</label>
+					<select name="designation" id="designation_select">
+						<option value="" disabled selected hidden>Select designation</option>
+						<option value="Head Of Department">HOD</option>
+						<option value="Teacher">Teacher</option>
+						<option value="Lab Assistant">Lab Assistant</option>
+					</select>
+				</div>
+
+				<div class="field">
+					<label>From</label>
+					<input type="date" placeholder="Select a date">
+				</div>
+				
+				<div class="field">
+					<label>To</label>
+					<input type="date" placeholder="Select a date">
+				</div>
+				
+				<div class="field">
+					<label>Number of leaves</label>
+					<input type="number" placeholder="Select number of leaves">
+					<!-- Make this not go below 1 -->
+				</div>
+				
+				<div class="field">
+					<label>Casual Leaves</label>
+					<input type="number" placeholder="Select the number of CL">
+				</div>
+				
+				<div class="field">
+					<label>Medical Leave</label>
+					<input type="number" placeholder="Select the number of ML">
+				</div>
+				
+				<div class="field">
+					<label>Off</label>
+					<input type="number" placeholder="Select the number of off days">
+				</div>
+
+				<div class="field">
+					<label>Reason for leave</label>
+					<input type="text" placeholder="Specify the reason for leave">
+				</div>
+
+				<div class="field">
+					<label>Other notes</label>
+					<input type="text" placeholder="(optional)">
+				</div>
+
+				<button>Submit</button>
+			</form>
+		</div>
+		<label>v0.5</label>
+	</body>
+</html>
