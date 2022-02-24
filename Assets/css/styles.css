@@ -27,6 +27,9 @@ body {
 	gap: 3rem;
 
 	box-shadow: -10px -10px 10px #2a353c, 10px 10px 10px #1c1e27;
+
+    /* overflow-x: hidden;
+    overflow-y: auto; */
 }
 
 h1 {
@@ -47,7 +50,7 @@ form {
     --webkit-appearance: none; /* Unsure areas */
     /* UNSURE */
 
-    
+
 }
 
 .field {
@@ -63,6 +66,18 @@ input {
 	font-family: inherit;
 	outline: none;
 	color: #4ecca3;
+
+	box-shadow: inset -5px -5px 12px #2a353c, inset 5px 5px 12px #1c1e27;
+}
+
+select {
+	background: transparent;
+	border-radius: 1.5rem;
+	border: none;
+	padding: 1rem 1.25rem;
+	font-family: inherit;
+	outline: none;
+	color: #757575;
 
 	box-shadow: inset -5px -5px 12px #2a353c, inset 5px 5px 12px #1c1e27;
 }
@@ -88,3 +103,18 @@ button:hover {
 button:focus-within {
 	box-shadow: inset -10px -10px 12px #2a353c, inset 10px 10px 12px #1c1e27;
 }
+
+/* 
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4ecca3;
+    border-radius: 10px;
+  } */
