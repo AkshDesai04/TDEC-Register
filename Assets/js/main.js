@@ -1,5 +1,5 @@
-const easterEgg = document.getElementById('easter-egg')
+// const easterEgg = document.getElementById('easter-egg')
 
-easterEgg.addEventListener('click', e => {
-	window.location = '../credits.html'
-})
+// easterEgg.addEventListener('click', e => {
+// 	window.location = '../credits.html'
+// })
