@@ -1,0 +1,18 @@
+<% layout('layouts/boilerplate') -%>
+
+<h1>Application</h1>
+
+<h2><%= application.title %></h2>
+<p>Description: <%= application.description %></p>
+<p>Category: <%= application.category %></p>
+
+<button><a href="/applications/<%= application._id %>/edit">Edit</a></button>
+
+<form
+	action="/applications/<%= application._id %>?_method=DELETE"
+	method="POST"
+>
+	<button>Delete</button>
+</form>
+
+<a href="/applications">Back to All Applications</a>

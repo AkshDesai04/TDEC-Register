@@ -2,7 +2,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path')
 const ejsMate = require('ejs-mate')
-const Application = require('./models/application')
+const methodOverride = require('method-override')
+
 // Router
 const applicationRoutes = require('./routes/applications')
 const app = express()
@@ -23,6 +24,8 @@ app.use(express.urlencoded({ extended: true }))
 // LET EXPRESS KNOW TO USE EJS AND FROM WHERE
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/views'))
+
+app.use(methodOverride('_method'))
 
 // ROUTES
 app.use('/applications', applicationRoutes)

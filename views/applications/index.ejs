@@ -7,6 +7,11 @@
 	<li>
 		<h3>Title: <%= application.title %></h3>
 		<p>Category: <%= application.category %></p>
+		<button>
+			<a href="/applications/<%= application._id %>">View More</a>
+		</button>
 	</li>
 	<% }) %>
 </ul>
+
+<a href="/applications/new">New</a>

@@ -18,9 +18,12 @@
 	<div>
 		<label for="category">Category</label>
 		<select name="application[category]" id="category">
-			<option value="Medical Leave">Medical Leave</option>
-			<option value="Other">Other</option>
+			<% categories.forEach(category => { %>
+			<option value="<%= category %>"><%= category %></option>
+			<% }) %>
 		</select>
 	</div>
 	<button>Submit</button>
 </form>
+
+<a href="/applications">Back to All Applications</a>

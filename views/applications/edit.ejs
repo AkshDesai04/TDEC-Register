@@ -1,0 +1,36 @@
+<% layout('layouts/boilerplate') -%>
+
+<h1>Edit Application</h1>
+<form action="/applications/<%= application._id %>?_method=PUT" method="POST">
+	<div>
+		<label for="title">Title:</label>
+		<input
+			type="text"
+			id="title"
+			name="application[title]"
+			value="<%= application.title %> "
+		/>
+	</div>
+	<div>
+		<label for="description">Description</label>
+		<textarea
+			name="application[description]"
+			id="description"
+			cols="30"
+			rows="10"
+		>
+<%= application.description %> </textarea
+		>
+	</div>
+	<div>
+		<label for="category">Category</label>
+		<select name="application[category]" id="category">
+      <% categories.forEach(category => { %>
+       <option value="<%= category %>" <%= category.toLowerCase() === application.category ? 'selected' : '' %>><%= category %></option>
+      <% }) %>
+		</select>
+	</div>
+	<button>Submit</button>
+</form>
+
+<a href="/applications/<%= application._id %> ">Cancel</a>
