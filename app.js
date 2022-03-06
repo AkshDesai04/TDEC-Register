@@ -18,6 +18,8 @@ mongoose
 
 app.engine('ejs', ejsMate)
 
+app.use(express.urlencoded({ extended: true }))
+
 // LET EXPRESS KNOW TO USE EJS AND FROM WHERE
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/views'))

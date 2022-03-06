@@ -1,0 +1,12 @@
+<% layout('layouts/boilerplate') -%>
+
+<h1>Applications</h1>
+
+<ul>
+	<% applications.forEach(application => { %>
+	<li>
+		<h3>Title: <%= application.title %></h3>
+		<p>Category: <%= application.category %></p>
+	</li>
+	<% }) %>
+</ul>
