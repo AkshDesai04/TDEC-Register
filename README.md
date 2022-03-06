@@ -18,4 +18,4 @@
   ### 1. Leave Application
     - Title: String
     - Description: String
-    
+    - Category: String [Medical, Other]
