@@ -1,11 +1,12 @@
 const mongoose = require('mongoose')
 
 const applicationSchema = new mongoose.Schema({
-	title: { type: [String, 'Title must be String'] },
-	description: { type: [String, 'Description must be String'] },
+	title: { type: String },
+	description: { type: String },
 	category: {
-		type: [String, 'Please Select a valid category'],
-		enum: ['Medical Leave', 'Other'],
+		type: String,
+		enum: ['medical leave', 'other'],
+		lowercase: true,
 	},
 })
 
